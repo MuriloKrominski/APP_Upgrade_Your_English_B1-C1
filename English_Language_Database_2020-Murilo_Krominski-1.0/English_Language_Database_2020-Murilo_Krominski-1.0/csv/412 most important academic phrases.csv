@@ -1,0 +1,413 @@
+SEQ,most_common_phrases_for_academic
+1,in terms of
+2,in relation to
+3,in the context of
+4,within the context of
+5,with respect to
+6,with regard to
+7,related to
+8,relating to
+9,the relationship between
+10,as to
+11,concerned with
+12,linked to
+13,relevant to
+14,in accordance with
+15,in respect of
+16,from the point of view of
+17,from the perspective of
+18,focus on
+19,in particular
+20,in question
+21,as part of
+22,the question of
+23,the concept of
+24,the idea of
+25,the notion of
+26,the problem of
+27,the issue of
+28,the idea that
+29,in the field of
+30,in the area of
+31,in the study of
+32,our understanding of
+33,an understanding of
+34,a better understanding of
+35,the assumption that
+36,the aim of this study
+37,the aim of this chapter
+38,the aim of this article
+39,the purpose of this study
+40,the purpose of this chapter
+41,the purpose of this article
+42,beyond the scope of
+43,will be discussed in more detail
+44,it is important
+45,it should be noted that
+46,it is important to note that
+47,it is interesting to note that
+48,it is worth noting that
+49,it is important to remember that
+50,it is important to realize that
+51,it is important to understand
+52,it is important to recognize aware of in mind
+53,it is important to recognize aware bear in mind
+54,it is important to be aware of in mind
+55,it is important to be aware bear in mind
+56,in the case of
+57,in this case
+58,the importance of
+59,the most important
+60,it is not surprising that
+61,the need for
+62,the need to
+63,there is a need for
+64,there is a need to
+65,the significance of
+66,it is necessary to
+67,it is useful to
+68,take into account
+69,be taken into account
+70,to take account of
+71,to be aware of
+72,it is difficult to
+73,the purposes of
+74,the benefits of
+75,note that
+76,an important role in
+77,at the heart of
+78,if and only if
+79,in fact
+80,it may be
+81,appears to be
+82,does not appear to be
+83,seems to be
+84,it can be argued that
+85,it could be argued that
+86,argues that
+87,held that
+88,claim that
+89,it is possible to
+90,it is possible that
+91,it is impossible to
+92,it may be possible to
+93,the possibility of
+94,the probability of
+95,the likelihood of
+96,the potential for
+97,has the potential to
+98,have the potential to
+99,based on the assumption that
+100,the view that
+101,considered to be
+102,to suggest that
+103,it is clear that
+104,it is not clear
+105,is not to say that
+106,is not to suggest that
+107,there is no reason to
+108,there is no doubt that
+109,it is difficult to see
+110,as a whole
+111,assume that
+112,it is reasonable to assume that
+113,it is fair to say that
+114,more or less
+115,in general
+116,is likely to be
+117,are likely to be
+118,is more likely to
+119,are more likely to
+120,were more likely to
+121,less likely to
+122,is likely to
+123,are likely to
+124,it is likely that
+125,be expected to
+126,in other words
+127,referred to as
+128,refers to
+129,this means that
+130,this does not mean that
+131,in the sense that
+132,in the sense of
+133,in this way
+134,in such a way
+135,in a way that
+136,a way of
+137,regarded as
+138,be thought of as
+139,the definition of
+140,is defined as
+141,to account for
+142,reasons for
+143,the reason for this is that
+144,it is for this reason that
+145,for a number of reasons
+146,can be described in terms of
+147,can be explained in terms of
+148,such as
+149,for example
+150,for instance
+151,as in
+152,as shown in
+153,according to
+154,is shown in
+155,are shown in
+156,can be seen
+157,it can be seen that
+158,as we have seen
+159,as we shall see
+160,it is easy to see that
+161,an example of
+162,is a good example of
+163,shows that
+164,indicates that
+165,has been shown to
+166,have been shown to
+167,it can be shown that
+168,it has been shown that
+169,have shown that
+170,evidence of
+171,evidence that
+172,evidence for
+173,data on
+174,research on
+175,support for
+176,it has been suggested that
+177,it has been argued that
+178,in some cases
+179,the fact that
+180,are based on
+181,basis for
+182,can be found in
+183,found to be
+184,found that
+185,observed in
+186,tend to
+187,characterized by
+188,in the light of
+189,as in the case of
+190,this is the case
+191,see also
+192,in the form of
+193,a form of
+194,different types of
+195,the type of
+196,a kind of
+197,kinds of
+198,in a number of ways
+199,in a variety of ways
+200,in so far as
+201,in order to
+202,so that
+203,due to
+204,may be due to
+205,due to the fact that
+206,as a result
+207,is a result of
+208,is the result of
+209,results in
+210,because of
+211,caused by
+212,the causes of
+213,the effects of
+214,the effects on
+215,an effects on
+216,the impact of
+217,an impact on
+218,subject to
+219,depends on
+220,dependent on
+221,determined by
+222,in response to
+223,the ways in which
+224,the manner in which
+225,is based on
+226,on the basis of
+227,on the basis that
+228,associated with
+229,association between
+230,involved in
+231,responsible for
+232,to ensure that
+233,tends to be
+234,give rise to
+235,by means of
+236,leads to
+237,can lead to
+238,may lead to
+239,so as to
+240,such that
+241,a change in
+242,is consistent with
+243,a consequence of
+244,the consequences of
+245,a means of
+246,the influence of
+247,is related to
+248,a source of
+249,derived from
+250,can be used to
+251,can be applied to
+252,on the part of
+253,at the expense of
+254,for the purposes of
+255,play a role in
+256,plays an important role
+257,an important role to play in
+258,play a key role in
+259,an integral part of
+260,lies at the heart of
+261,in the event of
+262,have a significant impact on
+263,is the most common cause of
+264,rather than
+265,as opposed to
+266,in contrast to
+267,in contrast
+268,on the other hand
+269,on the one hand
+270,the difference between
+271,differences in
+272,a number of different
+273,different from
+274,variation in
+275,whether or not
+276,this is not the case
+277,not necessarily
+278,with the exception of
+279,while at the same time
+280,in spite of the fact that
+281,is not the same as
+282,the other end of the spectrum
+283,compared with
+284,compared to
+285,relative to
+286,in the same way
+287,in much the same way
+288,similar to
+289,consistent with
+290,the corresponding
+291,corresponding to
+292,the advantages and disadvantages of
+293,as well as
+294,as well
+295,in addition
+296,but also
+297,and so on
+298,a combination of
+299,the number of
+300,there are a number of
+301,the amount of
+302,the level of
+303,a high level of
+304,the rate of
+305,a variety of
+306,range of
+307,in the range of
+308,a large number of
+309,a small number of
+310,the increase in
+311,increase in the number of
+312,the reduction in
+313,reduction in the number of
+314,the degree of
+315,the degree to which
+316,a high degree of
+317,the extent of
+318,the extent to which
+319,to the extent that
+320,the size of
+321,the growth of
+322,the rise of
+323,high levels of
+324,a series of
+325,the most common
+326,is equal to
+327,a measure of
+328,the percentage of
+329,a proportion of
+330,the ratio of
+331,the total number of
+332,the frequency of
+333,the prevalence of
+334,one or more of
+335,by a factor of
+336,is a measure of
+337,in part
+338,of the total
+339,to a greater or lesser extent
+340,more than
+341,greater than
+342,higher than
+343,less than
+344,lower than
+345,in the presence of
+346,the existence of
+347,in the absence of
+348,the lack of
+349,a lack of
+350,the presence or absence of
+351,the majority of
+352,the vast majority of
+353,in the course of
+354,in this study
+355,of this study
+356,in the study
+357,in this chapter
+358,of this chapter
+359,in the previous section
+360,in the next section
+361,the following
+362,as follows
+363,the above
+364,the former
+365,the latter
+366,the work of
+367,in the literature
+368,et al
+369,at the beginning of
+370,in the future
+371,in recent years
+372,in the past
+373,prior to
+374,a period of time
+375,over time
+376,at the same time
+377,in turn
+378,the use of
+379,the development of
+380,the role of
+381,the nature of
+382,the basis of
+383,the form of
+384,the values of
+385,in the process of
+386,the risk of
+387,a function of
+388,the quality of
+389,the study of
+390,the application of
+391,the formation of
+392,the ability to
+393,the evolution of
+394,the creation of
+395,the distribution of
+396,the emergence of
+397,the meaning of
+398,the principle of
+399,the introduction of
+400,the analysis of
+401,the effectiveness of
+402,the performance of
+403,the implementation of
+404,the availability of
+405,the content of
+406,aspects of
+407,characteristics of
+408,features of
+409,elements of
+410,his or her
+411,he or she
+412,men and women

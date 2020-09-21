@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -eu -o pipefail ${SHELLFLAGS}
+
+make -C $(dirname $0) run RUNFLAGS="$*"

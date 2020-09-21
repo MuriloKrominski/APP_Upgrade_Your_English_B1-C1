@@ -1,0 +1,152 @@
+Anki development
+=================
+
+Packaged betas
+---------------
+
+For non-developers who want to try this development code, the easiest way is
+to use a packaged version - please see:
+
+https://betas.ankiweb.net/#/
+
+You are welcome to run Anki from source instead, but it is expected that you
+can sort out all dependencies and issues by yourself - we are not able to
+provide support for problems you encounter when running from source.
+
+Python wheels
+--------------
+
+If you want to run Anki from a local Python installation but don't want
+to make changes to the source code, you can install pre-built packages from PyPI.
+
+$ python -m venv pyenv
+$ pyenv/bin/pip install aqt anki ankirspy pyqt5 pyqtwebengine
+$ pyenv/bin/python -c 'import aqt; aqt.run()'
+
+Building from source
+--------------------
+
+To start, make sure you have the following installed:
+
+ - Python 3.7+
+ - portaudio
+ - mpv
+ - lame
+ - npm
+ - your platform's C compiler, eg gcc, Xcode or Visual Studio 2017.
+ - GNU make
+ - protoc v3 (https://github.com/protocolbuffers/protobuf/releases)
+ - rustup (https://rustup.rs/)
+ - gettext
+ - rsync
+ - perl
+ - ripgrep (cargo install ripgrep)
+ - git
+ - curl
+
+The build scripts assume a UNIX-like environment, so on Windows you will
+need to use WSL or Cygwin to use them.
+
+Once you've installed the above components, execute ./run in this repo,
+which will build the subcomponents, and start Anki. Any arguments included
+on the command line will be passed on to Anki. The first run will take
+quite a while to download and build everything - please be patient.
+
+Before contributing code, please read README.contributing.
+
+If you'd like to contribute translations, please see the translations section
+of http://ankisrs.net/docs/manual.html#_contributing
+
+Subcomponents
+--------------
+
+- pylib contains a Python module (anki) with the non-GUI Python code.
+- qt contains the Qt GUI implementation (aqt).
+- rspy contains a Python module (ankirspy) for accessing the Rust code.
+- rslib contains the parts of the code implemented in Rust.
+- proto contains the interface used to communicate between different
+  languages.
+
+Makefile
+--------------
+
+Use 'make check' to run unit tests, type checking and linting on all of the
+subcomponents.
+
+Use 'make fix' to fix any formatting issues that were found with 'make check'.
+
+Use 'make build' to output Python wheels of the subcomponents into the dist/
+folder.
+
+Use 'make clean' to remove some generated files.
+
+To see all commands run by make or any shell script, export the environment
+variable SHELLFLAGS with '-x' to tell shell to print all commands run by it.
+For example, 'export SHELLFLAGS=-x' on Linux or 'set SHELLFLAGS=-x' on Windows.
+
+PyQt
+-----
+
+The build scripts will use PyQt/Qt from PyPI by default. If you wish to use a
+system install, you will need to set up the pyenv folder yourself, making sure
+you have PyQt5, the WebEngine module and development tools (eg pyqt5-dev-tools)
+installed as well. You'll need to create the venv with --system-site-packages.
+
+Debian/Ubuntu users
+-------------------
+
+Install Python 3.7+ if it's not installed.
+
+Install other dependencies:
+```
+sudo apt install portaudio19-dev mpv lame npm rsync gcc gettext git curl
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protoc-3.11.4-linux-x86_64.zip
+sudo unzip protoc-3.11.4-linux-x86_64.zip -d /usr/local/ -x readme.txt
+rustup update
+cargo install ripgrep
+```
+
+Mac users
+----------
+
+You can use homebrew to install some dependencies:
+
+$ brew install python mpv lame portaudio protobuf npm rustup-init gettext rename ripgrep
+
+$ brew link gettext --force
+
+Windows users (using Visual Studio)
+----------
+
+User-contributed instructions for building using Cygwin:
+
+1. Download and install Cygwin and put its `/bin/` directory on your system path (This PC > Properties > Advancded system settings > Environment Variables > double-click Path > New).
+1. Install the Cygwin Packages: `apt-cyg install rsync make` OR select rsync package during Cygwin installation
+    1. Download `gettext` 0.20.1 or superior and put its `bin` directory on your system path.
+        1. https://mlocati.github.io/articles/gettext-iconv-windows.html
+1. Download and install Python for Windows (not from Cygwin) and put `python.exe` (not `python3.exe`) on your system path.
+1. Download and install pip for your Windows Python (`python -m ensurepip`).
+1. Download and install rust (compiler), npm, git and put them your system path.
+1. Download and install the pyaudio wheel from: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+    1. After download the file for your Python version, you need to define the following environment
+        variable before running Anki:
+        `set "ANKI_EXTRA_PIP=python -m pip install full/path/to/PyAudio‑0.2.11‑cp38‑cp38‑win_amd64.whl"`
+    1. If there is not an wheel available for your Python version, you can built it from the source
+        following the installation instructions on: https://github.com/evandroforks/pyaudio
+        After building and installing portaudio, you need to define the following environment
+        variable before running Anki:
+        `set "ANKI_EXTRA_PIP=python -m pip install git+https://github.com/evandroforks/pyaudio"`
+1. Open a `cmd.exe` (command prompt) on the Anki repository and run the command `sh run`
+    1. Do not use `bash run` because it my call for Windows Subsystem for Linux
+    1. Do not use any Cygwin terminal as `mintty.exe` because the `rust lang` compiler does not work with them
+
+Enviromental Variables
+-----------------------
+
+If ANKIDEV is set before starting Anki, some extra log messages will be printed on stdout,
+and automatic backups will be disabled - so please don't use this except on a test profile.
+
+If LOGTERM is set before starting Anki, warnings and error messages that are normally placed
+in the collection2.log file will also be printed on stdout.

@@ -1,0 +1,79 @@
+[package]
+name = "anki"
+version = "2.1.33"  # automatically updated
+edition = "2018"
+authors = ["Ankitects Pty Ltd and contributors"]
+license = "AGPL-3.0-or-later"
+description = "Anki's Rust library code"
+readme = "README.md"
+
+[dependencies]
+# pinned as any changes could invalidate sqlite indexes
+unicase = "=2.6.0"
+
+nom = "5.1.2"
+failure = "0.1.8"
+prost = "0.6.1"
+bytes = "0.5.5"
+chrono = "0.4.13"
+lazy_static = "1.4.0"
+regex = "1.3.9"
+hex = "0.4.2"
+blake3 = "0.3.5"
+htmlescape = "0.3.1"
+sha1 = "0.6.0"
+unicode-normalization = "0.1.13"
+tempfile = "3.1.0"
+serde = "1.0.114"
+serde_json = "1.0.56"
+tokio = { version = "0.2.21", features = ["fs", "rt-threaded"] }
+serde_derive = "1.0.114"
+zip = "0.5.6"
+serde_tuple = "0.5.0"
+coarsetime = { git = "https://github.com/ankitects/rust-coarsetime.git", branch="old-mac-compat" }
+utime = "0.3.1"
+serde-aux = "0.6.1"
+unic-langid = { version = "0.8.0", features = ["macros"] }
+fluent = { git = "https://github.com/ankitects/fluent-rs.git", branch="32bit-panic" }
+intl-memoizer = { git = "https://github.com/ankitects/fluent-rs.git", branch="32bit-panic" }
+num-format = "0.4.0"
+slog = { version = "2.5.2", features = ["max_level_trace", "release_max_level_debug"] }
+slog-term = "2.6.0"
+slog-async = "2.5.0"
+slog-envlogger = "2.2.0"
+serde_repr = "0.1.6"
+num_enum = "0.5.0"
+futures = "0.3.5"
+rand = "0.7.3"
+num-integer = "0.1.43"
+itertools = "0.9.0"
+flate2 = "1.0.16"
+pin-project = "0.4.22"
+async-compression = { version = "0.3.5", features = ["stream", "gzip"] }
+askama = "0.10.1"
+hyper = "0.13.7"
+
+[target.'cfg(target_vendor="apple")'.dependencies.rusqlite]
+version = "0.23.1"
+features = ["trace", "functions", "collation"]
+
+[target.'cfg(not(target_vendor="apple"))'.dependencies.rusqlite]
+version = "0.23.1"
+features = ["trace", "functions", "collation", "bundled"]
+
+[target.'cfg(linux)'.dependencies.reqwest]
+git = "https://github.com/ankitects/reqwest.git"
+rev = "57665e2c2a39db85723ba860f1b570a608bb73f9"
+features = ["json", "socks", "stream", "native-tls-vendored"]
+
+[target.'cfg(not(linux))'.dependencies.reqwest]
+git = "https://github.com/ankitects/reqwest.git"
+rev = "57665e2c2a39db85723ba860f1b570a608bb73f9"
+features = ["json", "socks", "stream"]
+
+[build-dependencies]
+prost-build = "0.6.1"
+fluent-syntax = "0.9.3"
+
+[dev-dependencies]
+env_logger = "0.7.1"
