@@ -2,7 +2,7 @@
 from English_Language_Database_2020-Murilo_Krominski
 (https://github.com/MuriloKrominski/English_Language_Database_2020-Murilo_Krominski)
 
-APP Upgrade Your English B1-C1 - Kromisnki's method 4 fast improvement.
+APP Upgrade Your English B1-C1 - Kromisnki's method for fast improvement.
 
 ## APP_Upgrade_Your_English_B1-C1
 <a href="https://github.com/MuriloKrominski/APP_Upgrade_Your_English_B1-C1"><img src="https://img.shields.io/github/followers/MuriloKrominski?style=social"></a>
