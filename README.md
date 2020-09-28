@@ -27,7 +27,7 @@ APP Upgrade Your English B1-C1 - Kromisnki's method for fast improvement.<hr>
 
 ## ANKI and 4952_British_English.apkg.apkg to Import:<br>
 ![#008000](https://via.placeholder.com/15/008000/000000?text=+) https://apps.ankiweb.net/#download<br>
-![#008000](https://via.placeholder.com/15/008000/000000?text=+) https://github.com/MuriloKrominski/APP_Upgrade_Your_English_B1-C1/raw/master/4952%20British%20English.apkg<br><hr>
+![#008000](https://via.placeholder.com/15/008000/000000?text=+) https://github.com/MuriloKrominski/APP_Upgrade_Your_English_B1-C1/raw/master/4952%20British%20English.apkg (done) <br><hr>
 
 ## Sample
 add/æd<br>	A1 1/4952<br>	<a href="https://pt.youglish.com/pronounce/add/english/uk?">LINK 1: How to pronounce in British English</a><br>	<br><a href="https://www.youtube.com/results?search_query=Pronounce+add+in+British+English">LINK 2: How to pronounce in British English (YouTube)</a><br>	<br><a href="https://www.lexico.com/en/definition/add">LINK 3: Dictionary LEXICO (OXFORD)</a><br>	<br><a href="https://fraze.it/n_search.jsp?l=0&q=add">LINK 4: Dictionary FRAZE.IT</a><br>	<br><a href="https://pt.forvo.com/search/add/en_uk/">LINK 5: FORVO COMMUNITY (audio)</a><br>	<br><a href="https://translate.google.co.uk/#view=home&op=translate&sl=en&tl=pt&text=add">LINK 6: Google Translate</a><br>	<br>Created by @murilokrominski 2020<br>https://github.com/MuriloKrominski<br><br>ANKI, FORVO, FRAZE.IT, GitHub, Lexico(Oxford), YouGlish, and YouTube.<br><br><a href="mailto:murilo.krominski@fgv.edu.br"><font color="#000000"> murilo.krominski@fgv.edu.br </font></a><hr>
