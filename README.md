@@ -25,7 +25,7 @@ APP Upgrade Your English B1-C1 - Kromisnki's method for fast improvement.<hr>
 
 (https://github.com/MuriloKrominski/English_Language_Database_2020-Murilo_Krominski)<hr>
 
-## ANKI and 4952_British_English.apkg.apkg to Import:<br>
+## ANKI and 4952_British_English.apkg to Import:<br>
 ![#008000](https://via.placeholder.com/15/008000/000000?text=+) https://apps.ankiweb.net/#download<br>
 ![#008000](https://via.placeholder.com/15/008000/000000?text=+) https://github.com/MuriloKrominski/APP_Upgrade_Your_English_B1-C1/raw/master/4952%20British%20English.apkg (done) <br><hr>
 
